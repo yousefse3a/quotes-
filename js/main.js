@@ -2,12 +2,7 @@
 "use strict";
 
 $(document).ready(function () {
-  $("#sayingImg").height("150px");
-  $("#sayingImg").width("150px");
-  $(".Qoute .saying > div").height($("#sayingImg").height());
-  $(".Qoute .saying > div").width($("#sayingImg").width());
-  $(".Qoute .saying > div > i").height($("#sayingImg").height() / 6);
-  $(".Qoute .saying > div > i").width($("#sayingImg").width() / 6);
+
   check_quote_local();
 });
 function check_quote_local() {

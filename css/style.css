@@ -1,6 +1,17 @@
 body > div {
     background-color: #f1f5f8;
   }
+  h1{
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+
+  }
+  @media (min-width: 300px) and (max-width: 991px) {
+    h1{
+      font-size: 6rem;
+    }
+  }
   
   .Qoute {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -22,14 +33,35 @@ body > div {
   }
   .Qoute .saying > div {
     background-color: #49a6e9;
+    width: 150px;
+    height: 150px;
   }
   .Qoute .saying > div > img {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-55%, -48%);
             transform: translate(-55%, -48%);
+  }
+  .Qoute .saying > div > i{
+    width: calc(150px/6);
+    height: calc(150px/6);
+    
+  }
+  @media (min-width:300px) and (max-width:991px) {
+    .Qoute .saying > div,
+    .Qoute .saying > div > img {
+      width: 400px;
+      height: 400px;
+    }
+    .Qoute .saying > div > i{
+      width:calc(400px/6);
+      height: calc(400px/6);
+    }
+
   }
   .Qoute .saying > div > i {
     border-radius: 50%;
@@ -56,18 +88,24 @@ body > div {
     color: #eff3f6;
     background-color: #4974e9;
   }
+  @media (min-width:300px) and (max-width:991px){
+    .supriseBtn{
+      font-size: 3rem;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+  }
   
   .lead {
     font-size: 1.75rem;
   }
-  
-  .h-40 {
-    height: 40%;
+  @media (min-width:300px) and (max-width:991px) {
+    .lead{
+      font-size: 4rem;
+    }
   }
   
-  .h-10 {
-    height: 10%;
-  }
+  
 
   .dn{
       display: none !important;
